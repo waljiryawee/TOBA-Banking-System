@@ -8,6 +8,10 @@
 	<name>TOBA Titan Online Banking</name>
 	<description>TOBA Titan Online Banking Application</description>
 
+	<properties>
+		<eclipselink.version>2.5.2</eclipselink.version>
+	</properties>
+
 	<dependencies>
 		<dependency>
 			<groupId>javax</groupId>
@@ -15,6 +19,49 @@
 			<version>6.0</version>
 			<scope>provided</scope>
 		</dependency>
+
+		<dependency>
+			<groupId>org.eclipse.persistence</groupId>
+			<artifactId>eclipselink</artifactId>
+			<version>${eclipselink.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.eclipse.persistence</groupId>
+			<artifactId>org.eclipse.persistence.core</artifactId>
+			<version>${eclipselink.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.eclipse.persistence</groupId>
+			<artifactId>org.eclipse.persistence.jpa</artifactId>
+			<version>${eclipselink.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>postgresql</groupId>
+			<artifactId>postgresql</artifactId>
+			<version>9.1-901-1.jdbc4</version>
+		</dependency>
+
+		<dependency>
+			<groupId>javax.servlet.jsp.jstl</groupId>
+			<artifactId>jstl-api</artifactId>
+			<version>1.2</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.glassfish.web</groupId>
+			<artifactId>jstl-impl</artifactId>
+			<version>1.2</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>5.1.23</version>
+		</dependency>
+
+
 	</dependencies>
 
 	<build>
